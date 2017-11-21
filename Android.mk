@@ -19,7 +19,7 @@ ifneq ($(filter a106, $(TARGET_DEVICE)),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libaudiopolicymanager
 LOCAL_MODULE_OWNER := google
-LOCAL_SRC_FILES := proprietary/vendor/lib/libaudiopolicymanager.so
+LOCAL_SRC_FILES := vendor/lib/libaudiopolicymanager.so
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
@@ -29,7 +29,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libdpframework
 LOCAL_MODULE_OWNER := $VENDOR
-LOCAL_SRC_FILES := proprietary/lib/libdpframework.so
+LOCAL_SRC_FILES := lib/libdpframework.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
